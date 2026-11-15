@@ -304,7 +304,7 @@ def stats_card(s, th):
     b.append(f'<g class="fade"><path d="{area}" fill="url(#sp)"/><polyline points="{line}" fill="none" stroke="{ACCENT}" stroke-width="1.6" stroke-linejoin="round"/></g>')
     lx, ly = pts[-1]
     b.append(f'<circle cx="{lx:.1f}" cy="{ly:.1f}" r="3" fill="{ACCENT}"/>')
-    title = f'{fmt(s["total"])} contributions in the last 12 months; longest streak {s["longest"]} days; current streak {s["current"]} days; {s["active"]} active days'
+    title = f'{fmt(s["total"])} contributions in the last 12 months; longest streak {days(s["longest"])}; current streak {days(s["current"])}; {s["active"]} active days'
     return svg(W, H, title, "".join(b), GROW)
 
 
