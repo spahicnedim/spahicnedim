@@ -1,0 +1,13 @@
+{
+  "about": "Lines I added in private work repositories, per language. Only totals, no repo names or code. Refreshed locally with: python tools/stats.py --private <path-to-clone>",
+  "updated": "2026-11-15",
+  "lines": {
+    "C#": 64713,
+    "Razor": 27776,
+    "CSS": 14086,
+    "JavaScript": 3695,
+    "Python": 773,
+    "SQL": 19,
+    "TypeScript": 8
+  }
+}
